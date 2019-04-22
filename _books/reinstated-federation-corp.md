@@ -16,15 +16,20 @@ series: Federation Corp.
 percentage_complete: ''
 pre_release_date: ''
 publish_date: 2018-11-28 17:00:00 +0000
-published: true
 amazon_book_url: "/Reinstated-Federation-Corp-Elliot-Watts-ebook/dp/B07KYCT54Z/"
 undefined: ''
 redirect: "/2018/11/reinstated-federtation-corp-ebook.html"
 book_excerpt: "<p>This is my first book. It’s military science fiction, genetic engineering,
   and first contact all in one. &lt;em&gt;Reinstated: Federation Corp.&lt;/em&gt;&amp;nbsp;The
   Federation Corp. series starts here!</p>"
-reviews: []
+reviews:
+- reviewer_name: Mike
+  reviewer_image: "/uploads/good-reads-user.png"
+  reviewer_url: https://www.goodreads.com/user/show/64022316-mike
+  review_url: https://www.goodreads.com/book/show/42978877-reinstated#other_reviews
+  stars: 5
 date: 2019-04-22 14:21:31 +0000
+published: false
 
 ---
 This is my first book. It’s military science fiction, genetic engineering, and first contact all in one. <em>Reinstated: Federation Corp.</em>
