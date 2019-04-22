@@ -151,4 +151,5 @@ fields:
     label: Star Rating
     description: How many stars did the reviewer give?
 pages:
+- _books/alone.md
 - _books/reinstated-federation-corp.md
