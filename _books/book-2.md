@@ -26,6 +26,7 @@ redirect: "/2019/03/alone-ebook-released.html"
 book_excerpt: "<strong>A colonist’s worst nightmare comes true.</strong><br><br>Surrounded
   by thousands of people but still alone.<br><br>A sleeper ship is on its way to colonize
   another planet when something goes wrong."
+published: false
 
 ---
 Surrounded by thousands of people but still alone.
