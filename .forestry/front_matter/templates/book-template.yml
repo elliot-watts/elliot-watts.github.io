@@ -66,14 +66,14 @@ fields:
   description: This is the pre-release date on KDP.
   config:
     date_format: YYYY-MM-DD
-    display_utc: true
+    display_utc: false
 - type: datetime
   name: publish_date
   label: Publish Date
   description: This is the publish date (when the book is available to download)
   config:
     date_format: YYYY-MM-DD
-    display_utc: true
+    display_utc: false
 - type: boolean
   name: published
   label: Published
