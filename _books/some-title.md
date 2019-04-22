@@ -3,7 +3,7 @@ layout: book
 genres:
 - Military Sci-Fi
 genre_categories:
-- '1'
+- '2'
 author_name:
 - Elliot Watts
 kindle_unlimited: true
