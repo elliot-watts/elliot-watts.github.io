@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include _head.html %}
+
+  <body>
+
+    {% include _navbar-home.html %}
+    {% include _my-books.html %}
+    {% assign section_title = "Latest Releases "%}
+    {% include _latest-releases.html %}
+    
+    {% if page.url != "/" %}
+    <!-- Latest Posts -->
+    <div id="latest-posts" class="bg-white">
+      <div class="container py-6" data-animate="fadeIn">
+        {{ content }}
+      </div>
+    </div>
+    {% endif %}
+    {% include _latest-posts.html %}
+    {% include _footer.html %}
+
+  </body>
+
+</html>

@@ -1,0 +1,29 @@
+<nav class="navbar navbar-light navbar-expand-md navbar-dark fixed-top" {% if page.url=="/" %} data-aos="fade-down" data-aos-offset="400px" data-aos-delay="600" data-aos-once="true" {% endif %}>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/" title="{{ site.title | escape }}">
+      <span class="brand text-capitalize">{{ site.author_first_name }}</span ><span class="brand font-weight-bold text-capitalize">&nbsp;{{ site.author_last_name }}</span ><span class="sub-brand d-none d-sm-block">Science Fiction Author</span ></a >
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+      <span class="sr-only">Toggle navigation</span >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" href="/about/">ABOUT</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" href="/books/">Books</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" href="/upcoming-books/">Upcoming Books</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" href="/blog">Blog</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" href="/connect/">ConNECT</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

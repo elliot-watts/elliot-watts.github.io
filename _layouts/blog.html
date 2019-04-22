@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<main class="flex-grow-1">
+
+  <div class="jumbotron text-center text-white">
+    <div class="container">
+      <h1 class="display-4">Blog by&nbsp;<span>Elliot&nbsp;</span><span class="font-weight-bold">Watts</span></h1>
+      <p>Find out why thousands of readers are fans of my books<br>become one, too</p>
+      <a class="btn btn-primary my-button text-uppercase" role="button" href="/newsletter/">GET next book</a>
+    </div>
+  </div>
+
+  {{ content }}
+
+  <section id="cta-get-next-book" class="cta bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center py-5">
+          <a class="btn btn-lg my-button my-transition text-uppercase" href="/newsletter/">Get My Next Book</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% include _latest-releases.html %}
+</main>

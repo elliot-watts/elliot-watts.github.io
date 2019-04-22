@@ -1,0 +1,27 @@
+.pad {
+    // make this a mixin? so can customize the padding on the fly
+    &--all {
+        padding: 10px;
+    }
+
+    &--left {
+        padding-left: 10px;
+    }
+
+    &--right {
+        padding-right: 10px;
+    }
+
+    &--top {
+        padding-top: 10px;
+    }
+
+    &--bottom {
+        padding-bottom: 40px;
+    }
+}
+
+.icon--test {
+    right: 10px;
+    bottom: 10px;
+}

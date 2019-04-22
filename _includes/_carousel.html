@@ -1,0 +1,49 @@
+<div id="carousel-main" class="carousel slide py-5 text-white bg-dark" data-ride="carousel">
+  <div class="d-flex justify-content-center carousel-message">
+    <h1 class="text-center">Elliot's Latest Books</h1>
+  </div>
+  <ol class="carousel-indicators">
+    {% for book in site.books limit: 3 %}
+      {% assign published = book.published %}
+      {% assign pre_release_date = book.pre_release_date %}
+      {% if published or pre_release_date %}
+        <li class="{% if forloop.first %}active{% endif %}" data-slide-to="{{ forloop.index0 }}" data-target="#carousel-main"></li>
+      {% endif %}
+    {% endfor %}
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    {% for book in site.books limit: 3 %}
+      {% assign published = book.published %}
+      {% assign pre_release_date = book.pre_release_date %}
+      {% if published or pre_release_date %}
+        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+          <div class="container">
+            <div class="row">
+              <div class="col d-xl-flex flex-column order-2 order-md-1 justify-content-xl-center col-12 col-md py-5">
+                <a href="{{ book.url }}">
+                  <h1>{{ book.title }}</h1>
+                  <div>
+                    {{ book.excerpt }}
+                  </div>
+                  <div class="text-center">
+                    <p class="lead d-xl-flex justify-content-xl-center">Buy this book now&nbsp;{% if published == "" and pre_release_date %}
+                        <em>for pre-release</em>
+                      {% endif %}&nbsp;at</p>
+                    <div class="d-flex justify-content-center flex-wrap">
+                        {% for store in site.online_stores %}
+                        <a class="btn my-button mx-1 mb-2" href="{{ site.amazon_base_url }}{{ store.tld }}{{ book.amazon_book_url }}" target="_blank" rel="nofollow">{{ store.store }}</a>
+                        {% endfor %}
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col text-center order-1 col-12 col-md py-5">
+                <a href="{{ book.url }}"><img class="img-fluid" src="{{ book.image_path }}"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

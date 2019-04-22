@@ -1,0 +1,97 @@
+---
+layout: default
+title: My Blog
+navigation_weight: 4
+---
+<div class="jumbotron text-center text-white">
+  <div class="container">
+    <h1 class="display-4">Blog by&nbsp;<span class="text-capitalize">Elliot&nbsp;</span><span
+        class="text-capitalize font-weight-bold">Watts</span></h1>
+    <p>Find out why thousands of readers are fans of my books<br>become one, too</p>
+    <a class="btn btn-primary my-button text-uppercase" role="button" href="/newsletter/">Become a Fan</a>
+  </div>
+</div>
+<section id="blog-posts" class="py-5 bg-light-grey">
+  <div class="container">
+    {% if site.posts.size > 0 %}
+    <div class="row">
+      <div class="col">
+        <h2 class="font-weight-bold text-center text-lg-left pb-3">Elliot's Ramblings &amp; Other Things</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      {% for post in paginator.posts %}
+      <div class="col d-flex col-12 col-sm-6 col-lg-4 mb-4">
+        <article class="shadow-sm d-flex flex-column bg-white rounded w-100">
+          <a class="flex-grow-1 position-relative my-transition" href="{{ post.url }}">
+            {% if post.featured_post == true %}
+            <div class="ribbon pre-release">
+              <span>Featured</span></div>
+            {% endif %}
+            <img class="img-fluid rounded-top" src="{{ post.header_image }}">
+            <div class="p-3">
+              <h3 class="blog-post-heading">{{ post.title | escape }}</h3>
+              {%- if site.show_excerpts -%}
+              <div class="blog-post-blurb">{{ post.excerpt }}</div>
+              {%- endif -%}
+            </div>
+          </a>
+          <footer class="d-flex p-3">
+            <div class="d-flex flex-row flex-grow-1 align-self-end">
+              <a class="flex-grow-1" href="#">by Elliot Watts</a>
+              <span class="align-self-end text-uppercase" style="font-size: 12px;">{% include _read-time.html %}</span>
+            </div>
+          </footer>
+        </article>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="row">
+      <div class="col text-center my-5">
+        <nav class="d-inline-flex">
+          <ul class="pagination">
+            {% if paginator.previous_page %}
+            <li class="page-item">
+              <a class="page-link" href="{{ paginator.previous_page_path }}" aria-label="Previous">
+                <span aria-hidden="true">«</span></a>
+            </li>
+            {% else %}
+            <li class="page-item disabled">
+              <span class="page-link" href="" aria-label="Previous">«</span>
+            </li>
+            {% endif %}
+            <li class="page-item disabled">
+              <span class="page-link" href="#">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+            </li>
+            {% if paginator.next_page %}
+            <li class="page-item">
+                <a class="page-link" href="{{ paginator.next_page_path }}" aria-label="Next">
+                  <span aria-hidden="true">»</span></a>
+              </li>
+            {% else %}
+            <li class="page-item disabled">
+              <span class="page-link" href="" aria-label="Next">»</span>
+            </li>
+            {% endif %}
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+</section>
+
+<section id="cta-get-next-book" class="cta bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center py-5">
+        <a class="btn btn-lg my-button my-transition text-uppercase" href="/newsletter/">Get My Next Book</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include _latest-releases.html %}
+
+{% include _curious.html %}

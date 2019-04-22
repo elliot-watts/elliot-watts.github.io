@@ -1,0 +1,36 @@
+.demo {
+    width: 100%; // this still messes up IE8 for absolutely positioned items
+    // width: 100%; // can't be here for IE8 and below messes up the padding! can use on IE9, double check - overflow:hidden fixes this!!!!!
+    // necessary for IE10 and IE11 or full .Grid-cell div widths and heights won't work! not necessary for IE11, but can use it no prob.
+    // but not necessary for IE9!!! yeah! serve it up default but for IE9 and below make it width: auto or make it max-width: 100%!
+    //max-width: 100%;
+    //-ms-flex:1.0; // use this flexbox property for width instead, fixes IE10 height and width of u-auto
+    //-moz-box-flex:1.0;
+    flex: 1; // needed in FF, but not chrome? why? // this totaly fills height and width, not necessarily what needs to happen
+    //padding: .8em 1em 0;
+    @include remIt(padding, .8rem 1rem 0);
+    margin-bottom: 1em;
+    background: lighten(#93806C, 44%);
+    background: hsla(31, 15%, 50%, 0.1);
+    border-radius: 3px;
+
+    &::after {
+        content: "";
+        display: block;
+        margin-top: 0.8em;
+        height: 1px;
+    }
+
+    &-title {
+        margin-bottom: 0.25rem;
+        font-size: 1em;
+    }
+}
+
+#message-sent {
+    display: none;
+}
+
+.is-sent {
+    display: block;
+}

@@ -1,0 +1,41 @@
+.u {
+    &-pos {
+        &Absolute,
+        &AbsoluteCenter,
+        &Fit {
+            position: absolute !important;
+        }
+        // Element will be centered to its nearest relatively-positioned ancestor.
+        &AbsoluteCenter,
+        &FixedCenter {
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%) !important;
+        }
+
+        &Fit,
+        &FullScreen {
+            top: 0 !important;
+            left: 0 !important;
+            bottom: 0 !important;
+            right: 0 !important;
+            margin: auto !important;
+        }
+        // 1. Make sure fixed elements are promoted into a new layer, for performance reasons.
+        &Fixed,
+        &FixedCenter,
+        &FullScreen {
+            // 1
+            backface-visibility: hidden;
+            position: fixed !important;
+        }
+
+        &Relative {
+            position: relative !important;
+        }
+
+        &Static {
+            position: static !important;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+<!-- Start: Footer Basic -->
+<div class="footer-basic">
+    <footer>
+        <!-- Start: Social Icons -->
+        <div class="social">
+            {% if site.amazon_author_page %}
+            <a href="{{ site.amazon_author_page }}" target="_blank" rel="nofollow" class="my-transition"><i class="fab fa-amazon"></i></a>
+            {% endif %}
+            {% if site.twitter_author_page %}
+            <a href="{{ site.twitter_author_page }}" target="_blank" rel="nofollow" class="my-transition"><i class="fab fa-twitter"></i></a>
+            {% endif %}
+            {% if site.facebook_author_page %}
+            <a href="{{ site.facebook_author_page }}" target="_blank" rel="nofollow" class="my-transition"><i class="fab fa-facebook"></i></a>
+            {% endif %}
+            {% if site.goodreads_author_page %}
+            <a href="{{ site.goodreads_author_page }}" target="_blank" rel="nofollow" class="my-transition"><i class="fab fa-goodreads-g"></i></a>
+            {% endif %}
+            {% if site.instagram_author_page %}
+            <a href="https://www.instagram.com/theelliotwatts/" target="_blank" rel="nofollow" class="my-transition"><i class="fab fa-instagram"></i></a>
+            {% endif %}
+        </div>
+        <!-- End: Social Icons -->
+        <!-- Start: Links -->
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="/" class="my-transition">Home</a></li>
+            <li class="list-inline-item"><a href="/about/" class="my-transition">About</a></li>
+            <li class="list-inline-item"><a href="/books/" class="my-transition">Books</a></li>
+            <li class="list-inline-item"><a href="/upcoming-books/" class="my-transition">Upcoming Books</a></li>
+            <li class="list-inline-item"><a href="/contact/" class="my-transition">Contact</a></li>
+            <li class="list-inline-item"><a href="/blog/" class="my-transition">Blog</a></li>
+        </ul>
+        <!-- End: Links -->
+        <!-- Start: Copyright -->
+        {% assign copyright_start_year = site.copyright_start_year %}
+        {% assign current_year = site.time | date: "%Y" %}
+        <p class="copyright">Elliot Watts © {% if copyright_start_year == current_year %}{{ copyright_start_year }}{% else %}{{ copyright_start_year }} - {{ current_year}}{% endif %}</p>
+        <!-- End: Copyright -->
+    </footer>
+</div>
+<!-- End: Footer Basic -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+<script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
+<script src="/assets/js/script.min.js?h=e539946e3d0a07415ca159bfbad10d21"></script>

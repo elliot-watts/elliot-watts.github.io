@@ -1,0 +1,139 @@
+---
+layout: default
+---
+<section id="single-book" class="py-5">
+  <div class="container">
+    <div class="row mt-3 pt-5">
+      <div class="col-lg-6">
+        <img class="img-fluid" src="{{ page.image_path}}">
+      </div>
+      <div class="col-lg-6">
+        <div class="flex-grow-1">
+          <h1 class="pb-4">{{ page.title }}</h1>
+          <div>
+            {{ content }}
+            <footer class="py-5">
+              {% capture pre_release_date %}{{page.pre_release_date | date: '%s'}}
+              {% endcapture %}
+              {% capture publish_date %}{{page.publish_date | date: '%s'}}
+              {% endcapture %}
+              {% capture nowunix %}{{'now' | date: '%s'}}
+              {% endcapture %}
+              {% if page.published and pre_release_date < publish_date and publish_date > nowunix %}
+              <h3 class="text-center pb-3">Pre-release available now!</h3>
+              <p class="text-center">
+                <b>Buy</b>
+                this book
+                <b>now</b>, get it
+                <b>first</b>,
+                <b>lowest</b>
+                initial
+                <b>price</b>.</p>
+              {% else %}
+              <h3 class="text-center pb-3">Buy this book now at</h3>
+              {% endif %}
+              <p class="text-center pb-3">Thanks for supporting an indie author!</p>
+              <div class="d-flex justify-content-between flex-wrap">
+                {% for store in site.online_stores %}
+                <a class="btn my-button-light mx-1 mb-1"
+                  href="{{ site.amazon_base_url }}{{ store.tld }}{{ page.amazon_book_url }}" target="_blank" rel="nofollow">{{ store.store }}</a>
+                {% endfor %}
+              </div>
+              {% if page.kindle_unlimited %}
+              <p class="py-3 text-center font-italic">This book is also available on Kindle Unlimited!</p>
+              {% endif %}
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h2 class="display-4">Reviews</h2>
+        {% if page.reviews %}
+        <p>Here are some reviews for my book,
+          <strong>
+            <em>{{ page.title }}</em>
+          </strong>
+          <br>by other readers like you.
+        </p>
+        {% else %}
+        <p>
+          <i>Coming Soon!</i>
+        </p>
+        <p>Have you read this book? Why not give it a review?
+          <strong>Your review helps me succeed as an indie author.</strong>
+        </p>
+        <p>Review the book at the store you purchased it.</p>
+        {% for store in site.online_stores %}
+        <a class="btn my-button-light mx-1 mb-1"
+          href="{{ site.amazon_base_url }}{{ store.tld }}{{ page.amazon_book_url }}" target="_blank" rel="nofollow">{{ store.store }}</a>
+        {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+    <div class="row">
+      {% for review in page.reviews %}
+      {% assign num_stars = 5 %}
+      {% assign review_stars = review.stars %}
+      <div class="col d-flex flex-column col-4 py-2">
+        <div class="flex-grow-1 review-box bg-white p-3 mb-4 position-relative">
+          <ul class="star-rating mb-2">
+            {% assign end_index = num_stars | minus : 1 %}
+            {% for review_star in (0..end_index) %}
+            {% if review_star < review.stars %}
+            <li class="star">
+              <i class="fas fa-star"></i>
+            </li>
+            {% else %}
+            <li class="star">
+              <i class="far fa-star"></i>
+            </li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+          <h5 class="review-title my-transition">
+            <a href="{{ review.review_url }}" class="my-transition" target="_blank" rel="nofollow">
+              {% if review.review_content %}
+              <p>{{ review.review_content }}</p>
+              {% else %}
+              <strong>view review</strong>
+              {% endif %}
+            </a>
+          </h5>
+        </div>
+        <div class="media"><img class="mr-3 rounded-circle" src="{{ review.reviewer_image }}">
+          <div class="media-body">
+            <h5>
+              <a href="{{ review.reviewer_url }}" class="my-transition" target="_blank" rel="nofollow">
+                <strong>{{ review.reviewer_name }}</strong>
+              </a>
+            </h5>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="row">
+      <div class="col text-center py-5">
+        {% if page.reviews %}
+        <p>Have you read this book? Why not give it a review?
+          <strong>Your review helps me succeed as an indie author.</strong>
+        </p>
+        <p>Review the book at the store you purchased it.</p>
+        {% for store in site.online_stores %}
+        <a class="btn my-button-light mx-1 mb-1"
+          href="{{ site.amazon_base_url }}{{ store.tld }}{{ page.amazon_book_url }}" target="_blank" rel="nofollow">{{ store.store }}</a>
+        {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include _curious.html %}

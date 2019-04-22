@@ -1,0 +1,665 @@
+body {
+    //margin-top: 61px;
+}
+
+header {
+    position: relative;
+    height: 62px;
+    overflow: hidden;
+
+    &:after {
+        clear: both;
+    }
+}
+
+.logo {
+    display: inline-block;
+    width: 200px;
+    float: left;
+    background: url("/images/baanmaak-logo.png") no-repeat;
+    margin-top: 10px;
+    margin-left: 10px;
+    @include remIt( 'font-size', 12px);
+
+    a {
+        display: block;
+        top: 0;
+        padding: 20px;
+        color: #fff;
+        //text-shadow: 1px 1px 1px rgba(0,0,0,0.3); // TODO: text-shadow or not to text-shadow?
+        &:active,
+        &:focus,
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.bars {
+    position: absolute;
+    display: block;
+    right: 10px;
+    top: 8px;
+    padding: 15px;
+    z-index: 3;
+    color: #fff;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    transition: translate 250ms ease-in-out;
+
+    &.navbar-active {
+        position: fixed;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 3;
+        width: 100%;
+    }
+}
+
+.site-header {
+    background: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+
+    .logo {
+        background: url("/images/baanmaak-logo-color.png") no-repeat;
+
+        a {
+            color: #000;
+        }
+    }
+
+    .bars {
+        //color: #f5891f;
+        color: #000;
+    }
+
+    .navbar {
+        &-list-item a {
+            color: #000;
+        }
+    }
+}
+
+.home {
+    .site-header {
+        position: absolute;
+        width: 100%;
+        background: rgba(255, 255, 255, 0);
+        //background: url("baanmaak-logo.png") no-repeat;
+        //background: rgba(0,0,0,0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+
+        .logo {
+            background: url("/images/baanmaak-logo.png") no-repeat;
+
+            a {
+                color: #fff;
+            }
+        }
+
+        .navbar {
+            &-list-item a {
+                color: #fff;
+
+                &:active,
+                &:focus,
+                &:hover {
+                    text-decoration: none;
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+
+        .bars {
+            color: #fff;
+        }
+    }
+}
+/*.site-header-home {
+    position: absolute;
+    width: 100%;
+    background: rgba(255,255,255,0);
+    //background: url("baanmaak-logo.png") no-repeat;
+    //background: rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+
+    .logo {
+        background: url("/images/baanmaak-logo.png") no-repeat;
+
+        a {
+            color: #fff;
+        }
+    }
+
+    .navbar {
+        &-list-item a {
+            color: #fff;
+
+            &:active,
+            &:focus,
+            &:hover {
+                text-decoration: none;
+                border-bottom: 1px solid #fff;
+            }
+        }
+    }
+
+    .bars {
+        color: #fff;
+    }
+}*/
+.navbar {
+    float: right;
+    right: 0;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    top: 0;
+    z-index: 4;
+    display: block;
+    transition: transform 0.4s;
+    opacity: 0;
+    border: 1px solid #cdcdcd;
+    border-top: none;
+    border-right: none;
+    width: 285px;
+    height: 100vh;
+    padding: 10px;
+
+    .navbar-close {
+        position: absolute;
+        display: block;
+        right: 10px;
+        top: 5px;
+        padding: 15px;
+        //color: #f5891f; // TODO: color this orange?
+    }
+
+    &.navbar-active {
+        position: fixed;
+        background: #fff;
+        opacity: 1.0;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+
+        .navbar-list {
+            padding-top: 10px;
+            padding-left: 25px;
+
+            &-item {
+                a {
+                    padding: 10px;
+                    @include remIt( 'font-size', 14px);
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    color: #000;
+
+                    &:active,
+                    &:focus,
+                    &:hover {
+                        text-decoration: none;
+                        border-bottom: 1px solid transparent;
+                    }
+                }
+
+                &.hidden-desktop {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &-list {
+        font-size: 0;
+        list-style: none;
+        display: inline-block; // block for default, mobile first
+        //float: left;
+        height: auto;
+
+        &-item {
+            display: block; // block for default, mobile first
+            @include remIt( 'font-size', 10px);
+
+            a {
+                display: block;
+                padding: 21px 21px 20px;
+                color: #fff;
+                //text-shadow: 1px 1px 1px rgba(0,0,0,0.3); // TODO: text-shadow or not to text-shadow?
+                transition: border-bottom 0.3s ease-in-out;
+                border-bottom: 1px solid transparent;
+
+                &:active,
+                &:focus,
+                &:hover {
+                    text-decoration: none;
+                    border-bottom: 1px solid #000;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 35.5em) {
+    // for tablet and up
+    .hidden-desktop {
+        display: none;
+    }
+
+    .bars {
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+        right: 0;
+        margin-right: 0;
+        width: auto;
+        height: auto;
+        padding: 0;
+        border: none;
+        opacity: 1.0;
+        transition: all 0 ease-in-out;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+
+        .navbar-close {
+            display: none;
+        }
+
+        &-list {
+            display: inline-block;
+
+            &-item {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+input.error {
+    background-color: rgb(255, 231, 231);
+}
+
+.checked {
+    //TODO: do I need this?
+    background-color: #fafafa;
+}
+//.container {
+//    min-width: 1024px;
+//    //padding: 0 10px;
+//    margin: 0 auto;
+//}
+
+.gutter {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.va {
+    &-container {
+        display: table;
+        position: relative;
+
+        &-h {
+            width: 100%;
+        }
+
+        &-v {
+            height: 100%;
+        }
+    }
+
+    &-top {
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    &-middle {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    &-bottom {
+        display: table-cell;
+        vertical-align: bottom;
+    }
+}
+
+.text {
+    &-left {
+        text-align: left;
+    }
+
+    &-center {
+        text-align: center;
+    }
+
+    &-right {
+        text-align: right;
+    }
+}
+
+.tint {
+    cursor: pointer;
+
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 255, 255, 0.5);
+        transition: background 0.3s linear;
+    }
+
+    &:hover:before {
+        background: rgba(255, 255, 255, 0);
+    }
+}
+
+.pos {
+    &-relative {
+        position: relative;
+    }
+
+    &-absolute {
+        position: absolute;
+    }
+}
+
+.hidden-desktop {
+    display: none;
+}
+
+.featured-properties {
+    background-color: #F3F3F5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &-link {
+        width: 100%;
+        color: #333;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        &:visited {
+            color: inherit;
+        }
+    }
+}
+
+.watermark {
+    background-image: url('/images/baanmaak-logo-r50.png');
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 21px;
+    background-size: cover;
+}
+
+.card {
+    &-property {
+        width: 100%;
+        background: #fff;
+        margin: 0;
+        //padding-bottom: 10px;
+        border-bottom: 1px solid #000;
+
+        &-media {
+            width: 100%;
+            min-height: 200px;
+            background-size: cover;
+            background-position: center center;
+            position: relative;
+
+            &-overlay {
+                min-height: 200px;
+                background-color: rgba(0, 0, 0, 0.15);
+                transition: background-color 0.25s ease-in-out;
+            }
+
+            .watermark {
+                position: absolute;
+                top: 5px;
+                left: 5px;
+            }
+        }
+
+        &-info {
+            padding: 10px;
+        }
+
+        &-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding-bottom: 3px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        &-area {
+            font-size: 0.9rem;
+            padding-bottom: 40px;
+        }
+
+        &-bed-bath {
+            left: 10px;
+            bottom: 10px;
+            font-size: 0.9rem;
+
+            span:first-child {
+                padding-right: 5px;
+            }
+
+            span:nth-child(2) {
+                padding-right: 5px;
+            }
+
+            span:nth-child(3) {
+                padding-right: 5px;
+            }
+
+            span:nth-child(4) {
+                //padding-right: 5px;
+                color: lighten(#000, 60%);
+                //border: 1px solid lighten(#000, 25%);
+                //padding: 2px;
+                //padding-bottom: 4px;
+                //border-radius: 2px;
+            }
+        }
+
+        &-price {
+            // need .pos--absolute
+            right: 10px;
+            bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .img-responsive {
+            margin: 0 auto;
+        }
+    }
+
+    &-discover {
+        // Just an idea right now... TODO: background cover
+        background-color: #f5f5f5;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        min-height: 200px;
+        flex: 1;
+
+        &-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.featured-properties-link {
+    margin: 0 0 30px;
+    display: flex; // need to keep the cards the same height
+
+    &:hover {
+        .card-property-media-overlay {
+            background-color: rgba(0, 0, 0, 0.0);
+        }
+    }
+
+    &:active,
+    &:focus,
+    &:visited {
+        text-decoration: none;
+    }
+}
+
+.img-responsive {
+    min-height: 100px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+@media screen and (max-width: 35.5em) {
+    .site-wrapper {
+        overflow-x: hidden;
+    }
+
+    .container {
+        padding: 0;
+    }
+}
+
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    &-content {
+        flex: 1;
+    }
+
+    &-footer {
+        color: #fff;
+        background: #333;
+
+        &-content {
+            text-align: center;
+            padding: 20px;
+        }
+    }
+}
+
+.properties {
+    min-height: 90vh;
+    padding-bottom: 20px;
+}
+
+.pagesLoadingDefaultCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20rem;
+}
+
+.pagesLoadingDefault {
+    //max-width: 50%;
+    flex: 1;
+    border-color: #fff;
+}
+
+.hero {
+    padding-top: 61px;
+    background: #f3f3f5 url('/images/property-images/hero-image-dusk.jpeg') no-repeat;
+    display: table;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 440px;
+}
+@media screen and (min-height: 880px) {
+    .hero {
+        height: 875px;
+    }
+}
+@media screen and (min-height: 610px) {
+    .hero {
+        height: 600px;
+    }
+}
+// Media object
+
+.media {
+    display: flex;
+    align-items: flex-start;
+
+    &-figure {
+        margin-right: 1em;
+    }
+
+    &-body {
+        flex: 1;
+    }
+
+    &-heading {
+        margin-top: 0;
+    }
+}
+
+.property-item {
+    background: #fff;
+    border-bottom: 1px solid #000;
+
+    .media-figure {
+        min-width: 400px; // width of image
+    }
+}
+
+.properties {
+    padding-top: 20px;
+    background: #f3f3f5;
+}
+
+.sponsors {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: #cdcdcd;
+    width: 100%;
+    height: 100vh;
+}
+
+.propertiesWrapper {
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+.propertiesWrapper.animate {
+    opacity: 0.5;
+}
+
+.property {
+    &-list {
+        //list-style-type: none;
+    }
+
+    &-item {
+        list-style-type: none;
+        margin-bottom: 20px;
+        padding: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

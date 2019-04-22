@@ -1,0 +1,36 @@
+p,
+pre {
+    margin: 0 0 1em;
+}
+
+code,
+pre {
+    font-family: "source-code-pro", monospace;
+}
+
+code {
+    font-size: 0.9em;
+    font-weight: normal;
+    color: #000;
+}
+
+pre > code {
+    font: inherit;
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

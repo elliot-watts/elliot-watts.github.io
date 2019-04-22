@@ -1,0 +1,17 @@
+@import "colors";
+@import "navbar";
+@import "hero";
+@import "card";
+
+.about-books {
+    @include remIt('padding-top', 10px);
+    @include remIt('padding-bottom', 10px);
+}
+
+#footer {
+    display: flex;
+}
+
+.u-FullWidth {
+    width: 100%;
+}

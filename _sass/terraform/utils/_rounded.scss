@@ -1,0 +1,17 @@
+.u-roundedCircle {
+    border-radius: 50%;
+}
+
+$icon-size: 100px;
+$font-size: $icon-size/2.5;
+.icon-big {
+    @include remIt('font-size', $font-size);
+    @include remIt('width', $icon-size);
+    @include remIt('height', $icon-size);
+    @include remIt('min-width', $icon-size);
+    @include remIt('min-height', $icon-size);
+    text-align: center;
+    display: inline-block;
+    @include remIt('line-height', $icon-size, "YES");
+    margin: 0 auto;
+}

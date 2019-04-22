@@ -1,0 +1,84 @@
+.u {
+    &-text {
+        // Word breaking
+        // Break strings when their length exceeds the width of their container.
+        &Break {
+            word-wrap: break-word !important;
+        }
+        // Horizontal text alignment
+        &Center {
+            text-align: center !important;
+        }
+        &Right {
+            text-align: right !important;
+        }
+        // Text align left on LTR
+        &Start {
+            text-align: left !important;
+        }
+        // Text align right on LTR
+        &End {
+            text-align: right !important;
+        }
+        // Prevent whitespace wrapping
+        &NoWrap {
+            white-space: nowrap !important;
+        }
+        // Inherit ancestor's text color
+        &InheritColor {
+            color: inherit !important;
+        }
+        // Text truncation
+        // Prevent text from wrapping onto multiple lines, and truncate with an ellipsis.
+        // 1. Ensure that the node has a maximum width after which truncation can occur.
+        // 2. Fix for IE 8/9 if 'word-wrap': break-word is in effect on ancestor nodes.
+        &Truncate {
+            // 1
+            max-width: 100%;
+            overflow: hidden !important;
+            text-overflow: ellipsis !important;
+            white-space: nowrap !important;
+            word-wrap: normal !important;
+        }
+        // Enables font kerning in all browsers.
+        // http://blog.typekit.com/2014/02/05/kerning-on-the-web/
+        // 1. Chrome (not Windows), Firefox, IE10+
+        // 2. Safari 7 and future browsers
+        // 3. Chrome (not Windows), Firefox, Safari 6+, iOS, Android
+        &Kern {
+            // 1
+            font-feature-settings: "kern" 1;
+            // 2
+            font-kerning: normal;
+            // 3
+            text-rendering: optimizeLegibility;
+        }
+        &Capitalize {
+            text-transform: capitalize;
+        }
+        &Uppercase {
+            text-transform: uppercase;
+        }
+        &Normal {
+            font-weight: normal;
+        }
+        &Bold {
+            font-weight: bold;
+        }
+    }
+}
+
+html[dir=rtl] {
+    .u {
+        &-text {
+            // Text align-right on RTL
+            &Start {
+                text-align: right !important;
+            }
+            // Text align-left on RTL
+            &End {
+                text-align: left !important;
+            }
+        }
+    }
+}

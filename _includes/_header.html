@@ -1,0 +1,35 @@
+<header>
+  <nav class="navbar navbar-light navbar-expand-lg navbar-dark bg-dark py-3 fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="/">
+        <span class="brand text-capitalize">Elliot</span><span class="brand font-weight-bold text-capitalize">&nbsp;Watts</span><span class="d-none sub-brand d-none d-sm-block">Science Fiction Author</span>
+      </a>
+      <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse mx-auto" id="navcol-2">
+        <ul class="nav navbar-nav ml-auto text-uppercase">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link my-transition {% if page.url=='/about/' %}active{% endif %}" href="/about/">About</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link my-transition {% if page.url=='/books/' %}active{% endif %}" href="/books/">Books</a>
+          </li>
+          <li class="nav-item" role="presentation">
+              <a class="nav-link my-transition {% if page.url=='/upcoming-books/' %}active{% endif %}" href="/upcoming-books/">Upcoming Books</a>
+            </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link my-transition {% if page.url=='/contact/' %}active{% endif %}" href="/contact/">Contact</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link my-transition {% if page.url=='/blog/' %}active{% endif %}" href="/blog/">Blog</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link btn btn-danger btn-pill btn-navbar text-white" href="/newsletter/">Become a fan!</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

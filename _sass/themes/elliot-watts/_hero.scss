@@ -1,0 +1,6 @@
+.hero {
+    background-color: grey;
+    .Aligner {
+        height: calc( 100vh ); // 65px is the height of the navbar, don't adjust if header is fixed
+    }
+}

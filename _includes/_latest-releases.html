@@ -1,0 +1,91 @@
+<section id="latest-releases" class="bg-primary py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="font-weight-bold text-center text-lg-left text-white pb-3">Latest Releases</h2>
+      </div>
+    </div>
+    <div class="row">
+      {% assign sorted = (site.books | sort: 'publish_date')| reverse %}
+      {% for item in sorted | where : 'published',
+      item.published or where : 'pre_release_date',
+      item.pre_release_date limit: 3 %}
+        {% assign published = item.published %}
+        {% assign pre_release_date = item.pre_release_date %}
+        {% if published or pre_release_date %}
+          <div class="col d-flex col-12 col-md-6 col-lg-4 text-center">
+            <div class="d-flex flex-column content mb-3">
+              <a class="d-flex flex-column text-decoration-none my-transition box" href="{{ item.url }}">
+                  {% capture nowunix %}{{'now' | date: '%s'}}
+                  {% endcapture %}
+                  {% capture pre_release_dateo %}{{item.pre_release_date | date: '%s'}}
+                  {% endcapture %}
+                {% if pre_release_dateo > nowunix %}
+                  {% if item.amazon_url or item.amazon_affiliate_url %}
+                    <div class="ribbon pre-release">
+                      <span>Pre-Release</span>
+                    </div>
+                  {% endif %}
+                {% endif %}
+                <img class="img-fluid" src="{{ item.image_path }}">
+                <div class="d-flex flex-column flex-grow-1 justify-content-between p-2 pb-4">
+                  <h3 class="latest-releases-title">{{ item.title }}</h3>
+                  <div class="flex-grow-1 blurb">
+                    <div>{{ item.book_excerpt | truncate: 196, '...' }}</div>
+                  </div>
+                  {% capture item nowunix %}{{'now' | date: '%s'}}
+                  {% endcapture %}
+                  {% capture pre_release_date %}{{item.pre_release_date | date: '%s'}}
+                  {% endcapture %}
+                  {% if published != true and pre_release_date > nowunix %}
+                    <div class="bg-primary p-2 w-75 m-auto rounded percentage-complete">
+                      <p class="font-italic">Percentage complete</p>
+                      <div class="progress my-2">
+                        {% assign percentage_complete = item.percentage_complete %}
+                        <div class="progress-bar" aria-valuenow="{{ percentage_complete }}" aria-valuemin="0" aria-valuemax="100" style="width: \{\{ percentage_complete \}\}\%;" ">{{ percentage_complete }}%</div>
+                      </div>
+                    </div>
+                  {% endif %}
+                  {% comment %} <!-- too many Amazon book stores to display here on a small card for now -->
+                  {% if item.amazon_affiliate_url or item.amazon_url or item.kobo_url or item.apple_books_url %}
+                    <div class=" buy-at text-white text-center py-3">
+                      <p class="font-weight-bold">Buy at the following book sellers</p>
+                      <div>
+                        {% if item.amazon_affiliate_url %}
+                          <a href="{{ item.amazon_affiliate_url}}">
+                            <i class="fab fa-amazon"></i>
+                          </a>
+                          {% elsif item.amazon_url %}
+                          <a href="{{ item.amazon_url}}">
+                            <i class="fab fa-amazon"></i>
+                          </a>
+                        {% else %}
+                        {% endif %}
+                      </div>
+                    </div>
+                  {% else %}
+                    <div class="buy-at text-white text-center py-3">
+                      <p class="font-weight-bold">
+                        {% if item.pre_release_date %}
+                          pre-release date coming soon!
+                        {% else %}
+                          release date coming soon!
+                        {% endif %}
+                      </p>
+                    </div>
+                  {% endif %}
+                  {% endcomment %}
+                </div>
+              </a>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="row bg-primary">
+      <div class="col text-center mt-4">
+        <a class="btn btn-lg my-button my-transition text-uppercase" href="/books/">See More Of My Books</a>
+      </div>
+    </div>
+  </div>
+</section>
