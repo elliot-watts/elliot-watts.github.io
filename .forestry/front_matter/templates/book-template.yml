@@ -41,7 +41,7 @@ fields:
 - type: file
   name: image_path
   label: Book Cover
-  description: This is the bok cover
+  description: This is the book cover
 - type: select
   name: series
   config:
