@@ -1,0 +1,46 @@
+---
+label: Blog post
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+  description: Layout for the single blog post page
+  config:
+    required: true
+  default: post
+- type: text
+  name: title
+  label: title
+  config:
+    required: true
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: author
+  label: author
+  default: Elliot Watts
+- type: tag_list
+  label: Categories
+  name: categories
+  description: Categories go here.
+- type: tag_list
+  label: Tags
+  name: tags
+  description: Blog post tags go here.
+- type: boolean
+  name: featured_post
+  label: featured_post
+- type: file
+  name: header_image
+  label: header_image
+- type: textarea
+  name: excerpt
+  label: Excerpt
+  description: The blog post excerpt goes here.
+  config:
+    wysiwyg: true
+    schema:
+      format: html-blocks
+    required: true
