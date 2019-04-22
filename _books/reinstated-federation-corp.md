@@ -23,6 +23,22 @@ book_excerpt: "<p>This is my first book. It’s military science fiction, geneti
   and first contact all in one. &lt;em&gt;Reinstated: Federation Corp.&lt;/em&gt;&amp;nbsp;The
   Federation Corp. series starts here!</p>"
 reviews:
+- reviewer_name: Joel Ho
+  reviewer_image: "/uploads/good-reads-user.png"
+  reviewer_url: https://www.goodreads.com/user/show/90352177-joel-ho
+  review_url: https://www.goodreads.com/book/show/42978877-reinstated#other_reviews
+  stars: 5
+- reviewer_name: Ron Baker
+  reviewer_image: "/uploads/Ron-Baker.jpg"
+  reviewer_url: https://www.amazon.com/gp/profile/amzn1.account.AGBT5ZHURXFUYIZD2YBXT7DRZ7IQ
+  review_url: https://www.amazon.com/gp/customer-reviews/R3O69UPZGNJICY
+  review_content: "<p>This is my kind of science fiction, kind of ALIENS -esque. You
+    arrive at a planet (in this case a mining outpost) no one is answering your hails,
+    you are tasked with suiting up and going in blind to find out what has happened.
+    Like ALIENS these are infantry soldiers and, in this case, inmates pressed into
+    service to secure their freedom (which adds an interesting dynamic). As they explore
+    the outpost things get curiouser and curiouser. Recommended.</p>"
+  stars: 4
 - reviewer_name: Mike
   reviewer_image: "/uploads/good-reads-user.png"
   reviewer_url: https://www.goodreads.com/user/show/64022316-mike
