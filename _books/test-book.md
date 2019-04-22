@@ -15,8 +15,7 @@ image_path: "/uploads/lava-planet-test.png"
 series: ''
 percentage_complete: 100
 pre_release_date: ''
-publish_date: 2019-04-22
-published: false
+publish_date: 2019-04-21 17:00:00 +0000
 amazon_book_url: "/Reinstated-Federation-Corp-Elliot-Watts-ebook/dp/B07KYCT54Z/"
 undefined: ''
 redirect: ''
@@ -35,6 +34,7 @@ reviews:
   review_content: "<p>This is a test review</p>"
   stars: 5
 date: 2019-04-22 13:12:48 +0000
+published: false
 
 ---
 This is a test book.
