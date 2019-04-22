@@ -150,3 +150,5 @@ fields:
       - '5'
     label: Star Rating
     description: How many stars did the reviewer give?
+pages:
+- _books/test-book.md
