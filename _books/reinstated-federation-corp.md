@@ -50,8 +50,12 @@ published: true
 ---
 This is my first book. It’s military science fiction, genetic engineering, and first contact all in one. <em>Reinstated: Federation Corp.</em>
 
+The Federation Corp. series starts here!
+
   
-The Federation Corp. series starts here!  
-Pick up your copy at <a href="[https://amzn.to/2SjJIBw](https://amzn.to/2SjJIBw "https://amzn.to/2SjJIBw")">[https://amzn.to/2SjJIBw](https://amzn.to/2SjJIBw "https://amzn.to/2SjJIBw")</a>  
-And as always, <strong>all</strong> my books are available on Amazon Kindle Unlimited.  
+Pick up your copy at [https://amzn.to/2SjJIBw](https://amzn.to/2SjJIBw "https://amzn.to/2SjJIBw")
+
+  
+And as always, <strong>all</strong> my books are available on Amazon Kindle Unlimited.
+
 A decorated soldier finds himself in a situation that takes him to the far reaches of the Milky Way Galaxy. Getting back to his family might be his top priority, but command has other plans for him and his squad. He learns that things aren’t always what they seem, so it’s hard to trust people you just met. Thanks for your support!
