@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Welcome to Jekyll
+title:  Placeholder Post
 date:  2019-03-28 11:21:16 +0700
 author: Elliot Watts
 categories: jekyll update
