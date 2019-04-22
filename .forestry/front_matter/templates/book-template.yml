@@ -1,0 +1,152 @@
+---
+label: Book Template
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: Layout
+  description: This is the jekyll layout
+  hidden: true
+  config:
+    required: true
+  default: book
+- type: text
+  name: title
+  label: Book Title
+  description: This is the book’s title
+  config:
+    required: true
+- type: tag_list
+  label: Genres
+  name: genres
+  description: What are the genres of this book?
+  default:
+  - Science Fiction
+  - Military Sci-Fi
+  - Space Opera
+- type: tag_list
+  name: genre_categories
+  label: Genre Categories
+  description: Genre categories used for Filterizr for Book Carousel on home page.
+  default:
+  - '1'
+  - '2'
+  - '3'
+- type: tag_list
+  name: author_name
+  label: Author Name
+  description: Author name goes here
+  default:
+  - Elliot Watts
+- type: file
+  name: image_path
+  label: Book Cover
+  description: This is the bok cover
+- type: select
+  name: series
+  config:
+    source:
+      type: simple
+    required: false
+    options:
+    - Federation Corp.
+  label: Series
+  description: Is this book in a series? If so, which series?
+- type: number
+  name: percentage_complete
+  label: Percentage Complete
+  description: For WIPs, what percentage of the book is complete?
+  config:
+    max: '100'
+    min: '0'
+    step: '10'
+- type: datetime
+  name: pre_release_date
+  label: Pre-Release Date
+  description: This is the pre-release date on KDP.
+  config:
+    date_format: YYYY-MM-DD
+    display_utc: true
+- type: boolean
+  name: published
+  label: Published
+  description: Is the book published and live? (pre-release on KDP or published)
+- type: datetime
+  name: publish_date
+  label: Publish Date
+  description: This is the publish date (when the book is available to download)
+  config:
+    date_format: YYYY-MM-DD
+    display_utc: true
+- type: text
+  name: amazon_book_url
+  label: Amazon Book Url
+  description: This is just the part of the url for the book. i.e. (/Reinstated-Federation-Corp-Elliot-Watts-ebook/dp/B07KYCT54Z/)
+- type: boolean
+  name: kindle_unlimited
+  label: Kindle Unlimited
+  description: Is this book available on Kindle Unlimited
+  default: true
+- type: text
+- type: text
+  name: permalink
+  label: Permalink
+  description: The book’s page permalink (/book/book-title-here/)
+  config:
+    required: true
+  default: "/book/book-title-here/"
+- type: text
+  name: redirect
+  label: Redirect
+  description: Does this page redirect from another page url? If so, what is the url?
+    i.e. (/2018/11/reinstated-federtation-corp-ebook.html)
+- type: textarea
+  name: book_excerpt
+  label: Book Excerpt
+  description: This is the book’s excerpt.
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
+- type: field_group_list
+  name: reviews
+  label: Reviews
+  fields:
+  - type: text
+    name: reviewer_name
+    label: Reviewer Name
+    description: What is the reviewer’s name?
+  - type: file
+    name: reviewer_image
+    label: Reviewer Image
+    description: This is the reviewer’s profile pic or avatar.
+  - type: text
+    name: reviewer_url
+    label: Reviewer Url
+    description: What is the reviewer’s profile url? i.e. (https://www.goodreads.com/user/show/64022316-mike)
+  - type: text
+    label: Review Url
+    name: review_url
+    description: What is the review’s url? i.e.(https://www.goodreads.com/book/show/42978877-reinstated#other_reviews)
+  - type: textarea
+    name: review_content
+    label: Review Content
+    description: The review content goes here.
+    config:
+      wysiwyg: true
+      schema:
+        format: html-blocks
+  - type: select
+    name: stars
+    config:
+      source:
+        type: simple
+      options:
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    label: Star Rating
+    description: How many stars did the reviewer give?
