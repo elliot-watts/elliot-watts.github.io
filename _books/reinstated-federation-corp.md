@@ -45,7 +45,7 @@ reviews:
   review_url: https://www.goodreads.com/book/show/42978877-reinstated#other_reviews
   stars: 5
 date: 2019-04-22 14:21:31 +0000
-published: false
+published: true
 
 ---
 This is my first book. It’s military science fiction, genetic engineering, and first contact all in one. <em>Reinstated: Federation Corp.</em>
