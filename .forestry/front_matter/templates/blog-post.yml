@@ -45,4 +45,5 @@ fields:
       format: html-blocks
     required: true
 pages:
+- _posts/alone.md
 - _posts/reinstated-federation-corp-ebook-released.md
