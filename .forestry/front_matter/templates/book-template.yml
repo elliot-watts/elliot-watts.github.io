@@ -67,10 +67,6 @@ fields:
   config:
     date_format: YYYY-MM-DD
     display_utc: true
-- type: boolean
-  name: published
-  label: Published
-  description: Is the book published and live? (pre-release on KDP or published)
 - type: datetime
   name: publish_date
   label: Publish Date
@@ -78,6 +74,10 @@ fields:
   config:
     date_format: YYYY-MM-DD
     display_utc: true
+- type: boolean
+  name: published
+  label: Published
+  description: Is the book published and live? (pre-release on KDP or published)
 - type: text
   name: amazon_book_url
   label: Amazon Book Url
