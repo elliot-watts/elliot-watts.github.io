@@ -29,18 +29,13 @@ date: 2019-04-22 14:33:28 +0000
 ---
 Surrounded by thousands of people but still alone.
 
-  
 A sleeper ship is on its way to colonize another planet when something goes wrong.  
 When things are built to last, but don’t… Miranda takes matters into her own hands and tries to correct things that have gone wrong. Will she put things right or be defeated by an unknown foe?
 
-  
-Pick up your copy at <a href="[https://amzn.to/2HQBnU7](https://amzn.to/2HQBnU7 "https://amzn.to/2HQBnU7")">[https://amzn.to/2HQBnU7](https://amzn.to/2HQBnU7 "https://amzn.to/2HQBnU7")</a>
+Pick up your copy at [https://amzn.to/2HQBnU7](https://amzn.to/2HQBnU7 "https://amzn.to/2HQBnU7")
 
-  
 This book is currently available on Amazon Kindle Unlimited.
 
-  
 Thank you for reading my books!
 
-  
 This book is my second book and a relaunch of a book I launched last month, Stasis Critical. Same great story with a new title and improved cover!
