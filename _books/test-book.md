@@ -34,7 +34,7 @@ reviews:
   review_content: "<p>This is a test review</p>"
   stars: 5
 date: 2019-04-22 13:12:48 +0000
-published: false
+published: true
 
 ---
 This is a test book.
