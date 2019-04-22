@@ -9,7 +9,7 @@ genre_categories:
 author_name:
 - Elliot Watts
 kindle_unlimited: true
-permalink: "/book/test-book/"
+permalink: "/books/test-book/"
 title: Test Book
 image_path: "/uploads/lava-planet-test.png"
 series: ''
