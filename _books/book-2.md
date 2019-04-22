@@ -40,4 +40,4 @@ This book is currently available on Amazon Kindle Unlimited.
 
 Thank you for reading my books!
 
-This book is my second book and a relaunch of a book I launched last month, Stasis Critical. Same great story with a new title and improved cover!!
+This book is my second book and a relaunch of a book I launched last month, Stasis Critical. Same great story with a new title and improved cover!
