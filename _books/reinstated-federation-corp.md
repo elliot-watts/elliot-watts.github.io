@@ -16,7 +16,7 @@ series: Federation Corp.
 percentage_complete: ''
 pre_release_date: ''
 publish_date: 2018-11-28 17:00:00 +0000
-published: false
+published: true
 amazon_book_url: "/Reinstated-Federation-Corp-Elliot-Watts-ebook/dp/B07KYCT54Z/"
 undefined: ''
 redirect: "/2018/11/reinstated-federtation-corp-ebook.html"
