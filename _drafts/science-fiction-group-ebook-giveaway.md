@@ -22,6 +22,8 @@ This **limited time** promo (from Apr 3rd, 2019 - Apr 7th, 2019) is for free and
 Act now, this is your chance!  
 Get my book Reinstated: Federation Corp for free for a limited time and check out the other great authors in the link below.
 
+https://storyoriginapp.com/to/oeFQPA0l
+
 [https://storyoriginapp.com/to/oeFQPA0l](https://storyoriginapp.com/to/oeFQPA0l "https://storyoriginapp.com/to/oeFQPA0l")
 
 _Genres available in this promotion: military sci-fi, space opera, post-apocalyptic, , cyberpunk_
