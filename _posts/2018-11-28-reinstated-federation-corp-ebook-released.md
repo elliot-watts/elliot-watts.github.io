@@ -17,8 +17,7 @@ excerpt: "<p>A decorated soldier finds himself in a situation that takes him to 
 ---
 This is my first book. It's military science fiction, genetic engineering, and first contact all in one.
 
-_  
-Reinstated: Federation Corp. The Federation Corp._ series starts here!
+_Reinstated: Federation Corp. The Federation Corp._ series starts here!
 
 A decorated soldier finds himself in a situation that takes him to the far reaches of the Milky Way Galaxy. Getting back to his family might be his top priority, but command has other plans for him and his squad. He learns that things aren’t always what they seem, so it’s hard to trust people you just met.
 
