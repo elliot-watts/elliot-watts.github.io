@@ -1,9 +1,7 @@
 ---
 layout: book
 genres:
-- Science Fiction
 - Military Sci-Fi
-- Space Opera
 genre_categories:
 - '1'
 - '2'
@@ -24,6 +22,12 @@ undefined: ''
 redirect: ''
 book_excerpt: "<p>The book excerpt goes here</p>"
 reviews:
+- reviewer_name: Tom
+  reviewer_image: "/uploads/ElliotWatts_ebook-1.jpg"
+  reviewer_url: http://somewhere.com
+  review_url: http://somewhere.com
+  review_content: "<p>This is a review for the ages!</p>"
+  stars: 5
 - reviewer_name: Tim
   reviewer_image: "/uploads/ElliotWatts_ebook.jpg"
   reviewer_url: http://somewhere.com
