@@ -23,7 +23,13 @@ amazon_book_url: ''
 undefined: ''
 redirect: ''
 book_excerpt: "<p>The book excerpt goes here</p>"
-reviews: []
+reviews:
+- reviewer_name: Tim
+  reviewer_image: "/uploads/ElliotWatts_ebook.jpg"
+  reviewer_url: http://somewhere.com
+  review_url: http://somewhere.com
+  review_content: "<p>Review content goes here.</p>"
+  stars: 5
 date: 2019-04-22 12:08:03 +0000
 
 ---
