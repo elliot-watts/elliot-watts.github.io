@@ -16,15 +16,15 @@ series: ''
 percentage_complete: ''
 pre_release_date: ''
 publish_date: 2019-03-23 17:00:00 +0000
-published: true
 amazon_book_url: "/Alone-Elliot-Watts-ebook/dp/B07Q186ZHY/"
 undefined: ''
 redirect: "/2019/03/alone-ebook-released.html"
-book_excerpt: "<p>&lt;strong&gt;A colonist’s worst nightmare comes true.&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Surrounded</p><p>
-  by thousands of people but still alone.&lt;br&gt;&lt;br&gt;A sleeper ship is on
-  its way to colonize</p><p> another planet when something goes wrong.</p>"
+book_excerpt: "<p>&lt;strong&gt;A colonist’s worst nightmare comes true.&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Surrounded</p><p>by
+  thousands of people but still alone.&lt;br&gt;&lt;br&gt;A sleeper ship is on its
+  way to colonize</p><p>another planet when something goes wrong...</p>"
 reviews: []
 date: 2019-04-22 14:33:28 +0000
+published: false
 
 ---
 Surrounded by thousands of people but still alone.
