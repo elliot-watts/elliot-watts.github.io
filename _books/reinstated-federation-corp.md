@@ -19,9 +19,10 @@ publish_date: 2018-11-28 17:00:00 +0000
 amazon_book_url: "/Reinstated-Federation-Corp-Elliot-Watts-ebook/dp/B07KYCT54Z/"
 undefined: ''
 redirect: "/2018/11/reinstated-federtation-corp-ebook.html"
-book_excerpt: "<p>This is my first book. It’s military science fiction, genetic engineering,
-  and first contact all in one. &lt;em&gt;Reinstated: Federation Corp.&lt;/em&gt;&amp;nbsp;The
-  Federation Corp. series starts here!</p>"
+book_excerpt: "<p>A decorated soldier finds himself in a situation that takes him
+  to the far reaches of the Milky Way Galaxy. Getting back to his family might be
+  his top priority, but command has other plans for him and his squad. He learns that
+  things aren’t always what they seem, so it’s hard to trust people you just met...</p>"
 reviews:
 - reviewer_name: Joel Ho
   reviewer_image: "/uploads/good-reads-user.png"
@@ -45,7 +46,7 @@ reviews:
   review_url: https://www.goodreads.com/book/show/42978877-reinstated#other_reviews
   stars: 5
 date: 2019-04-22 14:21:31 +0000
-published: true
+published: false
 
 ---
 This is my first book. It’s military science fiction, genetic engineering, and first contact all in one. <em>Reinstated: Federation Corp.</em>
