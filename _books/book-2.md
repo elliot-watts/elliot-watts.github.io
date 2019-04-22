@@ -17,7 +17,7 @@ kobo_url:
 apple_books_url: 
 percentage_complete: 100
 wip_order: 2
-pre_release_date: 2019-03-23 17:00:00 +0000
+pre_release_date: ''
 publish_date: 2019-03-24 00:00:00 +0000
 publish_order: 2
 kindle_unlimited: true
