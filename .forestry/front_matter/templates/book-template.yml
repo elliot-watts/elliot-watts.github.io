@@ -91,10 +91,10 @@ fields:
 - type: text
   name: permalink
   label: Permalink
-  description: The book’s page permalink (/book/book-title-here/)
+  description: The book’s page permalink (/books/book-title-here/)
   config:
     required: true
-  default: "/book/book-title-here/"
+  default: "/books/book-title-here/"
 - type: text
   name: redirect
   label: Redirect
