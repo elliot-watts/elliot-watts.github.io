@@ -3,7 +3,7 @@
     <h1 class="display-4 text-center font-weight-bold pt-5">My Available Books</h1>
     <div class="filtr-controls">
       <span class="active" data-filter="all">all</span>
-      <span data-filter="1">science fiction</span>
+      <!--<span data-filter="1">science fiction</span>-->
       <span data-filter="2">military sci-fi</span>
       <span data-filter="3">space opera</span>
     </div>
@@ -14,7 +14,7 @@
         {% assign published = book.published %}
         {% assign pre_release_date = book.pre_release_date %}
         {% if published or pre_release_date %}
-          <div class="col-sm-6 col-md-4 col-lg-3 filtr-item" data-category="{% for genre in book.genre_catetories %}{{ genre }}, {% endfor %}">
+          <div class="col-sm-6 col-md-4 col-lg-3 filtr-item" data-category="{% for genre in book.genre_categories %}{{ genre }}, {% endfor %}">
             <a href="{{ book.url }}"><img class="img-fluid" src="{{ book.image_path }}"></a>
           </div>
         {% endif %}
