@@ -44,5 +44,3 @@ fields:
     schema:
       format: html-blocks
     required: true
-pages:
-- _posts/some-post-title.md
