@@ -14,7 +14,7 @@ series: ''
 percentage_complete: ''
 pre_release_date: ''
 published: false
-publish_date: ''
+publish_date: 2019-04-24 00:00:00 +0000
 amazon_book_url: ''
 undefined: ''
 redirect: ''
