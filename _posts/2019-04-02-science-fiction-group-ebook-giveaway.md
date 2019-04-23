@@ -8,7 +8,7 @@ tags:
 - free books
 - promotions
 featured_post: false
-header_image: "/uploads/Science-Fiction-Free-03Apr-07Apr2019.jpg"
+header_image: "/uploads/science-fiction-free-03apr-07apr2019.jpg"
 excerpt: "<p>Get my book Reinstated: Federation Corp for free for a limited time and
   check out the other great authors</p>"
 
