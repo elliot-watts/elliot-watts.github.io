@@ -91,7 +91,7 @@ layout: default
             {% endfor %}
           </ul>
           <h5 class="review-title my-transition">
-            <a href="{{ review.review_url }}" class="my-transition" target="_blank" rel="nofollow">
+            <a href="{{ review.review_url }}" class="my-transition" target="_blank"  rel="noreferrer">
               {% if review.review_content %}
               <p>{{ review.review_content }}</p>
               {% else %}
@@ -103,7 +103,7 @@ layout: default
         <div class="media"><img class="mr-3 rounded-circle" src="{{ review.reviewer_image }}">
           <div class="media-body">
             <h5>
-              <a href="{{ review.reviewer_url }}" class="my-transition" target="_blank" rel="nofollow">
+              <a href="{{ review.reviewer_url }}" class="my-transition" target="_blank"  rel="noreferrer">
                 <strong>{{ review.reviewer_name }}</strong>
               </a>
             </h5>
@@ -121,7 +121,7 @@ layout: default
         <p>Review the book at the store you purchased it.</p>
         {% for store in site.online_stores %}
         <a class="btn my-button-light mx-1 mb-1"
-          href="{{ site.amazon_base_url }}{{ store.tld }}{{ page.amazon_book_url }}" target="_blank" rel="nofollow">{{ store.store }}</a>
+          href="{{ site.amazon_base_url }}{{ store.tld }}{{ page.amazon_book_url }}" target="_blank"  rel="noreferrer">{{ store.store }}</a>
         {% endfor %}
         {% endif %}
       </div>

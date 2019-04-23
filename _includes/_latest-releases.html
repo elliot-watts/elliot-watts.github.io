@@ -52,11 +52,11 @@
                       <p class="font-weight-bold">Buy at the following book sellers</p>
                       <div>
                         {% if item.amazon_affiliate_url %}
-                          <a href="{{ item.amazon_affiliate_url}}">
+                          <a href="{{ item.amazon_affiliate_url}}"  rel="noreferrer">
                             <i class="fab fa-amazon"></i>
                           </a>
                           {% elsif item.amazon_url %}
-                          <a href="{{ item.amazon_url}}">
+                          <a href="{{ item.amazon_url}}"  rel="noreferrer">
                             <i class="fab fa-amazon"></i>
                           </a>
                         {% else %}

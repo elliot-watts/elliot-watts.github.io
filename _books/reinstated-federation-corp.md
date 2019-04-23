@@ -53,7 +53,7 @@ This is my first book. It’s military science fiction, genetic engineering, and
 
 The Federation Corp. series starts here!
 
-Pick up your copy at <a href="https://amzn.to/2SjJIBw" target="_blank">https://amzn.to/2SjJIBw</a>
+Pick up your copy at <a href="https://amzn.to/2SjJIBw" target="_blank" rel="noreferrer">https://amzn.to/2SjJIBw</a>
 
 And as always, <strong>all</strong> my books are available on Amazon Kindle Unlimited.
 
