@@ -36,7 +36,7 @@ layout: default
               <div class="d-flex justify-content-between flex-wrap">
                 {% for store in site.online_stores %}
                 <a class="btn my-button-light mx-1 mb-1"
-                  href="{{ site.amazon_base_url }}{{ store.tld }}{{ page.amazon_book_url }}" target="_blank" rel="nofollow">{{ store.store }}</a>
+                  href="{{ site.amazon_base_url }}{{ store.tld }}{{ page.amazon_book_url }}" target="_blank" rel="noreferrer">{{ store.store }}</a>
                 {% endfor %}
               </div>
               {% if page.kindle_unlimited %}
