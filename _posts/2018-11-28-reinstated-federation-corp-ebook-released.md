@@ -8,7 +8,7 @@ tags:
 - books
 - features
 featured_post: false
-header_image: "/uploads/reinstated-book-cover.png"
+header_image: "/uploads/reinstated-ebook-cover.png"
 excerpt: "<p>A decorated soldier finds himself in a situation that takes him to the
   far reaches of the Milky Way Galaxy. Getting back to his family might be his top
   priority, but command has other plans for him and his squad. He learns that things
