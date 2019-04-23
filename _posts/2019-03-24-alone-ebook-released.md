@@ -8,7 +8,7 @@ tags:
 - books
 - featured
 featured_post: false
-header_image: "/uploads/Alone-ebook-cover.png"
+header_image: "/uploads/alone-ebook-cover.png"
 excerpt: "<p><strong>A colonist’s worst nightmare comes true</strong>.</p><p><br>Surrounded
   by thousands of people but still alone.</p><p><br>A sleeper ship is on its way to
   colonize another planet when something goes wrong.</p>"
