@@ -11,7 +11,7 @@ author_name:
 kindle_unlimited: true
 permalink: "/books/alone/"
 title: Alone
-image_path: "/uploads/Alone-ebook-cover.png"
+image_path: "/uploads/alone-ebook-cover.png"
 series: ''
 percentage_complete: ''
 pre_release_date: ''
@@ -24,7 +24,7 @@ book_excerpt: "<p>&lt;strong&gt;A colonist’s worst nightmare comes true.&lt;/s
   way to colonize</p><p>another planet when something goes wrong...</p>"
 reviews: []
 date: 2019-04-22 14:33:28 +0000
-published: true
+published: false
 
 ---
 Surrounded by thousands of people but still alone.
