@@ -31,7 +31,7 @@
                       {% endif %}&nbsp;at</p>
                     <div class="d-flex justify-content-center flex-wrap">
                         {% for store in site.online_stores %}
-                        <a class="btn my-button mx-1 mb-2" href="{{ site.amazon_base_url }}{{ store.tld }}{{ book.amazon_book_url }}" target="_blank" rel="nofollow">{{ store.store }}</a>
+                        <a class="btn my-button mx-1 mb-2" href="{{ site.amazon_base_url }}{{ store.tld }}{{ book.amazon_book_url }}" target="_blank" rel="noreferrer">{{ store.store }}</a>
                         {% endfor %}
                     </div>
                   </div>
