@@ -32,7 +32,7 @@ Surrounded by thousands of people but still alone.
 A sleeper ship is on its way to colonize another planet when something goes wrong.  
 When things are built to last, but don’t… Miranda takes matters into her own hands and tries to correct things that have gone wrong. Will she put things right or be defeated by an unknown foe?
 
-Pick up your copy at <a href="https://amzn.to/2HQBnU7" target="_blank" rel="norefferer">https://amzn.to/2HQBnU7</a>
+Pick up your copy at <a href="https://amzn.to/2HQBnU7" target="_blank" rel="noreferrer">https://amzn.to/2HQBnU7</a>
 
 This book is currently available on Amazon Kindle Unlimited.
 
