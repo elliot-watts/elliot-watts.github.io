@@ -55,7 +55,8 @@ layout: default
     <div class="row">
       <div class="col text-center">
         <h2 class="display-4">Reviews</h2>
-        {% if page.reviews %}
+        {% assign rsize = page.reviews | size %}
+        {% if rsize != 0 %}
         <p>Here are some reviews for my book,
           <strong>
             <em>{{ page.title }}</em>
@@ -66,14 +67,6 @@ layout: default
         <p>
           <i>Coming Soon!</i>
         </p>
-        <p>Have you read this book? Why not give it a review?
-          <strong>Your review helps me succeed as an indie author.</strong>
-        </p>
-        <p>Review the book at the store you purchased it.</p>
-        {% for store in site.online_stores %}
-        <a class="btn my-button-light mx-1 mb-1"
-          href="{{ site.amazon_base_url }}{{ store.tld }}{{ page.amazon_book_url }}" target="_blank" rel="nofollow">{{ store.store }}</a>
-        {% endfor %}
         {% endif %}
       </div>
     </div>
