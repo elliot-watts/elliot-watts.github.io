@@ -28,13 +28,13 @@ book_excerpt: 'This is my first book. It’s military science fiction, genetic e
   Corp. series starts here!'
 reviews:
 - reviewer_name: Mike
-  reviewer_image: "/assets/img/good-reads-user.png?h=f51416f6f4529ddc93d0c2509086d467"
+  reviewer_image: "/assets/img/good-reads-user.png"
   reviewer_url: https://www.goodreads.com/user/show/64022316-mike
   review_url: https://www.goodreads.com/book/show/42978877-reinstated#other_reviews
   review_content: 
   stars: 5
 - reviewer_name: Ron Baker
-  reviewer_image: "/assets/img/Ron-Baker.jpg?h=7701fd8f0ef91c9f9100b5ad5741a054"
+  reviewer_image: "/assets/img/Ron-Baker.jpg"
   reviewer_url: https://www.amazon.com/gp/profile/amzn1.account.AGBT5ZHURXFUYIZD2YBXT7DRZ7IQ
   review_url: https://www.amazon.com/gp/customer-reviews/R3O69UPZGNJICY
   review_content: This is my kind of science fiction, kind of ALIENS -esque. You arrive
@@ -45,7 +45,7 @@ reviews:
     outpost things get curiouser and curiouser. Recommended.
   stars: 4
 - reviewer_name: Joel Ho
-  reviewer_image: "/assets/img/good-reads-user.png?h=f51416f6f4529ddc93d0c2509086d467"
+  reviewer_image: "/assets/img/good-reads-user.png"
   reviewer_url: https://www.goodreads.com/user/show/90352177-joel-ho
   review_url: https://www.goodreads.com/book/show/42978877-reinstated#other_reviews
   review_content: 
