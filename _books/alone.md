@@ -24,7 +24,7 @@ book_excerpt: "<p><strong>A colonist’s worst nightmare comes true.</strong></p
   planet when something goes wrong...</p>"
 reviews: []
 date: 2019-04-22 14:33:28 +0000
-published: false
+published: true
 
 ---
 Surrounded by thousands of people but still alone.
