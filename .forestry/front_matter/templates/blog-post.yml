@@ -45,6 +45,5 @@ fields:
       format: html-blocks
     required: true
 pages:
-- _posts/reinstated-federation-corp-ebook-released.md
 - _posts/2019-04-02-science-fiction-group-ebook-giveaway.md
 - _posts/2019-03-24-alone.md
