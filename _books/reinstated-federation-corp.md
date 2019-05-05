@@ -13,9 +13,9 @@ permalink: "/books/reinstated/"
 title: 'Reinstated: Federation Corp.'
 image_path: "/uploads/reinstated-ebook-cover.png"
 series: Federation Corp.
-percentage_complete: ''
-pre_release_date: ''
-publish_date: 2018-11-28 17:00:00 +0000
+percentage_complete: 
+pre_release_date: 
+publish_date: 2018-11-28T17:00:00.000+00:00
 amazon_book_url: "/Reinstated-Federation-Corp-Elliot-Watts-ebook/dp/B07KYCT54Z/"
 undefined: ''
 redirect: "/2018/11/reinstated-federtation-corp-ebook.html"
@@ -24,11 +24,20 @@ book_excerpt: "<p>A decorated soldier finds himself in a situation that takes hi
   his top priority, but command has other plans for him and his squad. He learns that
   things aren’t always what they seem, so it’s hard to trust people you just met...</p>"
 reviews:
+- reviewer_name: jody
+  reviewer_image: ''
+  reviewer_url: https://www.amazon.com/gp/profile/amzn1.account.AF3IUKKP5623H5KUR7USB2L4FWBQ
+  review_url: https://www.amazon.com/review/R1YXI5IIGJGZKE
+  review_content: "<p>There’s alot of missing background but still an interesting
+    book. Hopefully the questions get answered as you read more in the series. Still
+    a nice short read</p>"
+  stars: ''
 - reviewer_name: Joel Ho
   reviewer_image: "/uploads/good-reads-user.png"
   reviewer_url: https://www.goodreads.com/user/show/90352177-joel-ho
   review_url: https://www.goodreads.com/book/show/42978877-reinstated#other_reviews
   stars: 5
+  review_content: ''
 - reviewer_name: Ron Baker
   reviewer_image: "/uploads/Ron-Baker.jpg"
   reviewer_url: https://www.amazon.com/gp/profile/amzn1.account.AGBT5ZHURXFUYIZD2YBXT7DRZ7IQ
@@ -45,8 +54,9 @@ reviews:
   reviewer_url: https://www.goodreads.com/user/show/64022316-mike
   review_url: https://www.goodreads.com/book/show/42978877-reinstated#other_reviews
   stars: 5
-date: 2019-04-22 14:21:31 +0000
-published: true
+  review_content: ''
+date: '2019-04-22T14:21:31.000+00:00'
+published: false
 
 ---
 This is my first book. It’s military science fiction, genetic engineering, and first contact all in one. <em>Reinstated: Federation Corp.</em>
