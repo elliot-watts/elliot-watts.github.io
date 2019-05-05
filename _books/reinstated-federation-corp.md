@@ -33,13 +33,13 @@ reviews:
     a nice short read</p>"
   stars: 5
 - reviewer_name: Joel Ho
-  reviewer_image: "/uploads/good-reads-user.png"
+  reviewer_image: "/uploads/goodreads-user.png"
   reviewer_url: https://www.goodreads.com/user/show/90352177-joel-ho
   review_url: https://www.goodreads.com/book/show/42978877-reinstated#other_reviews
   stars: 5
   review_content: ''
 - reviewer_name: Ron Baker
-  reviewer_image: "/uploads/Ron-Baker.jpg"
+  reviewer_image: "/uploads/ron-baker.jpg"
   reviewer_url: https://www.amazon.com/gp/profile/amzn1.account.AGBT5ZHURXFUYIZD2YBXT7DRZ7IQ
   review_url: https://www.amazon.com/gp/customer-reviews/R3O69UPZGNJICY
   review_content: "<p>This is my kind of science fiction, kind of ALIENS -esque. You
@@ -50,7 +50,7 @@ reviews:
     the outpost things get curiouser and curiouser. Recommended.</p>"
   stars: 4
 - reviewer_name: Mike
-  reviewer_image: "/uploads/good-reads-user.png"
+  reviewer_image: "/uploads/goodreads-user.png"
   reviewer_url: https://www.goodreads.com/user/show/64022316-mike
   review_url: https://www.goodreads.com/book/show/42978877-reinstated#other_reviews
   stars: 5
