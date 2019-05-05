@@ -53,7 +53,7 @@ reviews:
   reviewer_image: "/uploads/goodreads-user.png"
   reviewer_url: https://www.goodreads.com/user/show/64022316-mike
   review_url: https://www.goodreads.com/book/show/42978877-reinstated#other_reviews
-  stars: 5
+  stars: 4
   review_content: ''
 date: '2019-04-22T14:21:31.000+00:00'
 published: true
