@@ -25,13 +25,13 @@ book_excerpt: "<p>A decorated soldier finds himself in a situation that takes hi
   things aren’t always what they seem, so it’s hard to trust people you just met...</p>"
 reviews:
 - reviewer_name: jody
-  reviewer_image: ''
+  reviewer_image: "/uploads/amazon_user.jpg"
   reviewer_url: https://www.amazon.com/gp/profile/amzn1.account.AF3IUKKP5623H5KUR7USB2L4FWBQ
   review_url: https://www.amazon.com/review/R1YXI5IIGJGZKE
   review_content: "<p>There’s alot of missing background but still an interesting
     book. Hopefully the questions get answered as you read more in the series. Still
     a nice short read</p>"
-  stars: ''
+  stars: 5
 - reviewer_name: Joel Ho
   reviewer_image: "/uploads/good-reads-user.png"
   reviewer_url: https://www.goodreads.com/user/show/90352177-joel-ho
