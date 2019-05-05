@@ -56,7 +56,7 @@ reviews:
   stars: 5
   review_content: ''
 date: '2019-04-22T14:21:31.000+00:00'
-published: false
+published: true
 
 ---
 This is my first book. It’s military science fiction, genetic engineering, and first contact all in one. <em>Reinstated: Federation Corp.</em>
